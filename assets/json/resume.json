@@ -122,7 +122,7 @@
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Python (proficient)",
-        "C/C++",  
+        "C/C++ (intermediate)",  
         "MATLAB (intermediate)" 
       ]
     },
@@ -130,7 +130,7 @@
       "name": "Machine Learning",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Numpy", "Scipy", "Pandas", "Scikit-learn", "Scikit-optimize"
+        "Numpy", "Scipy", "Pandas", "Scikit Learn", "Scikit Optimize"
       ]
     },
     {
