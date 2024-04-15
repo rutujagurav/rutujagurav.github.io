@@ -1,29 +1,36 @@
 {
   "basics": {
-    "name": "Rutuja Gurav",
-    "label": "Computer Scientist",
+    "name": "Albert Einstein",
+    "label": "Scientist",
     "image": "",
-    "email": "rutujagurav100@gmail.com",
-    "phone": "",
-    "url": "https://rutujagurav.github.io",
-    "summary": "",
+    "email": "albert@einstein.de",
+    "phone": "(912) 123-4567",
+    "url": "https://alshedivat.github.io/al-folio/",
+    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
     "profiles": [
       {
-        "network": "Github",
-        "username": "rutujagurav",
-        "url": "https://github.com/rutujagurav"
+        "network": "Twitter",
+        "username": "AlbertEinstein",
+        "url": "https://twitter.com/AlbertEinstein"
       }
     ]
   },
   "work": [
     {
-      "name": "University of California, Riverside",
-      "position": "Graduate Student Researcher",
-      "url": "https://profiles.ucr.edu/rutuja.gurav",
-      "startDate": "2019-06-15",
-      "endDate": "present",
-      "summary": "Working on AI for Science",
-      "highlights": [""]
+      "name": "Institute for Advanced Study, Princeton University",
+      "position": "Professor of Theoretical Physics",
+      "url": "https://example.com",
+      "startDate": "1933-01-01",
+      "endDate": "1955-01-01",
+      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "highlights": ["Relativity"]
     }
   ],
   "volunteer": [
@@ -39,22 +46,15 @@
   ],
   "education": [
     {
-      "institution": "University of California, Riverside",
-      "location": "Riverside, California",
-      "url": "https://www.ucr.edu/",
-      "area": "AI for Science",
+      "institution": "University of Zurich, Zurich, Switzerland",
+      "location": "Zurich, Switzerland",
+      "url": "https://www.uzh.ch/",
+      "area": "Software Development",
       "studyType": "PhD",
-      "startDate": "2019-09-21",
-      "endDate": "present"
-    },
-    {
-      "institution": "University of California, Riverside",
-      "location": "Riverside, California",
-      "url": "https://www.ucr.edu/",
-      "area": "AI for Science",
-      "studyType": "MS",
-      "startDate": "2017-09-21",
-      "endDate": "2019-06-15"
+      "startDate": "1905-01-01",
+      "endDate": "1905-01-01",
+      "score": "10",
+      "courses": ["Theory of Relativity"]
     }
   ],
   "awards": [
