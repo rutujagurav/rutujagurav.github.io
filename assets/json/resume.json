@@ -22,19 +22,32 @@
       "url": "https://profiles.ucr.edu/rutuja.gurav",
       "startDate": "2019-06-15",
       "endDate": "present",
-      "summary": "Working on AI for Science",
+      "summary": "Working on AI for Science research projects in collaboration with the LIGO Scientific Collaboration and UCR's Digital Agriculture Group.",
       "highlights": [""]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "People's Climate March",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Lawrence Livermore National Lab (LLNL)",
+      "position": "Graduate Summer Research Intern (Team: Data Science & Analytics Group)",
+      "startDate": "2022-06-15",
+      "endDate": "2022-09-10",
+      "summary": "Modeled multi-scale, multi-physics simulations using Graph Neural Networks (GNNs). ",
+      "highlights": [""]
+    },
+    {
+      "name": "Oak Ridge National Lab (ORNL)",
+      "position": "Graduate Summer Research Intern (Team: Geoinformatics Engineering)",
+      "startDate": "2021-06-15",
+      "endDate": "2021-08-31",
+      "summary": " Conflation of Geospatial POI Data and Ground-level Imagery via Link Prediction on Joint Semantic Graphs.",
+      "highlights": [""]
+    },
+    {
+      "name": "Esri Inc.",
+      "position": "Data Science Intern (Team: GeoAI)",
+      "startDate": "2018-06-15",
+      "endDate": "2018-08-31",
+      "summary": "Water mains breaks prediction using historic pipe records to forecast future breaks in water supply pipelines to aid risk assessment and maintenance.",
+      "highlights": [""]
     }
   ],
   "education": [
@@ -55,145 +68,67 @@
       "studyType": "MS",
       "startDate": "2017-09-21",
       "endDate": "2019-06-15"
+    },
+    {
+      "institution": "University of Mumbai",
+      "location": "Mumabi, India",
+      "area": "Computer Engineering",
+      "studyType": "BE",
+      "startDate": "2013-06-01",
+      "endDate": "2017-06-15"
     }
   ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
+  
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Identifying Witnesses to Noise Transients in Ground-based Gravitational-wave Observations using Auxiliary Channels with Matrix and Tensor Factorization Techniques.",
+      "publisher": "NeurIPS 2022 AI for Science: Progress and Promises",
+      "releaseDate": "2022-12-15",
+      "url": "https://openreview.net/forum?id=O9q0ma6Oh5e",
+      "summary": ""
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Can SAM recognize crops? Quantifying the zero-shot performance of a semantic segmentation foundation model on generating crop-type maps using satellite imagery for precision agriculture",
+      "publisher": "NeurIPS 2023 AI for Scientific Discovery: From Theory to Practice",
+      "releaseDate": "2023-12-15",
+      "url": "https://arxiv.org/abs/2311.15138",
+      "summary": ""
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Conflation of geospatial POI data and ground-level imagery via link prediction on joint semantic graph.",
+      "publisher": "ACM SIGSPATIAL International Workshop on AI for Geographic Knowledge Discovery",
+      "releaseDate": "2021-11-15",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3486635.3491068",
+      "summary": ""
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
+      "name": "Programming Languages / Software",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python (proficient)",
+        "C/C++",  
+        "MATLAB (intermediate)" 
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "English",
+      "fluency": "Proficient",
+      "icon": ""
+    },
+    {
+      "language": "Marathi",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Hindi",
+      "fluency": "Native speaker",
       "icon": ""
     }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
   ]
+  
 }
