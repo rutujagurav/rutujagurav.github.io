@@ -7,8 +7,7 @@ tags: classification scikit-learn wrappers
 categories: my-little-helpers
 ---
 # Getting Started
-Every time I start a new machine learning project, I find myself going through the same tedious process of trial and error of setting up a grid search to find the _right_ model along with the _right_ set of hyperparameters for the model that optimize one or more of the laundry list of _metrics-of-interest_ and repeating every combination of _free parameters_ in this pipeline a bunch of times and finally making a lot of plots to get the lay of the land so to speak.
-So, over the years, I have developed a set of convenience wrappers around the mighty `scikit-learn` library that I use to make this process a bit more streamlined and published them as `clfutils4r` (the 'r' being my initial rather than the language...err, should have thought this through, huh?). I thought I would share them here in case they are useful to anyone else. 
+Every time I start a new machine learning project, I find myself going through the same tedious process of trial and error of setting up a grid search to find the _right_ model along with the _right_ set of hyperparameters for the model that optimize one or more of the laundry list of _metrics-of-interest_ and repeating every combination of _free parameters_ in this pipeline a bunch of times and finally making a lot of plots to get the lay of the land so to speak. So, over the years, I have developed a set of convenience wrappers around the mighty `scikit-learn` library that I use to make this process a bit more streamlined and published them as `clfutils4r` (the 'r' being my initial not the language...err, should have thought this through, huh?). I thought I would share them here in case they are useful to anyone else. 
 
 The premise is this: Someone hands you a clasification dataset. You want to know the standard metrics on various classifiers available in `scikit-learn` and you want to know them _now_. You don't want to spend time writing boilerplate code setting up a grid search and you don't want to spend time making plots. Here is minimally complete example of how you can do it with essentially 2 function calls:
 
@@ -54,10 +53,11 @@ y_pred_proba = best_model.predict_proba(X_test)
 
 ## Evaluate best model on test set
 from clfutils4r.eval_classification import eval_classification
-eval_classification(y_test=y_test, y_pred=y_pred, y_pred_proba=y_pred_proba,  
+eval_classification(y_test=y_test, y_pred=y_pred, y_pred_proba=y_pred_proba,  # ground truth labels, predicted labels, predicted probabilities
                     class_names=class_names, feature_names=feature_names,
                     titlestr="Breast Cancer Classification",
-                    make_metrics_plots=True, 
+                    make_metrics_plots=True, # make a variety of classification metrics plots
+                    make_shap_plot=True, shap_nsamples=100, # do Shapley analysis for model explainability
                     show=True,  
                     save=True, RESULTS_DIR=os.getcwd()+'/test_results')
 
@@ -70,12 +70,52 @@ Let's dive a bit deeper into the two functions that are being called here.
 This will produce a whole bunch of useful outputs including the best model which you can use as you choose downstream, the results of the grid search - The data is stored in a neat JSOn file and it is also visualized with a _Parallel Co-ordinates Plot_. I find this type of plot very useful to get a quick view of the grid search.
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/parcoord_plot.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/parcoord_plot.png" class="img-fluid rounded z-depth-1" %}
     </div>
-    <!-- <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/7.jpg" class="img-fluid rounded z-depth-1" %}
-    </div> -->
 </div>
 <div class="caption">
     The parallel co-ordinates plot that is produced by `gridsearch_classification` function for the _K Nearest Neighbors_ classifier for the example above.
+</div>
+
+### `eval_classification`
+
+The primary out is the classic sklearn _classification report_. Sometimes that's all you need but by setting the `make_metrics_plots` to `True` you can choose to make a variety of other plots that I find useful for understanding the performance of the model. These include the familiar plots of the confusion matrix, the ROC curve, the precision-recall curve as well as some more exotic ones I found in `scikit-plot` that are exclusive to binary classification like the KS statistic plot, the cumulative gains curve and the lift curve. You can also choose to do Shapley analysis to _explain_ the model predictions by setting the `make_shap_plot` parameter to `True` and specifying the number of samples to use for the analysis with the `shap_nsamples` parameter. I love the fantastic `shap` package so I just wrapped the _KernelExplainer_ and _summary_plot_ from `shap` in this function.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/confusion_matrix.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/classwise_roc_curve.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/classwise_pr_curve.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The classic evaluation plots produced by `eval_classification` function on the test set for the best model returned by `gridsearch_classification()` for the example above.
+</div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/ks_stat.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/cumul_gain.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/lift_curve.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Some more exotic evaluation plots exclusive to binary classification produced by `eval_classification` function on the test set for the best model returned by `gridsearch_classification()` for the example above.
+</div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/shap_summary_plot.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The Shapley analysis summary plot produced by `shape` package for the best model returned by `gridsearch_classification()` for the example above.
 </div>
