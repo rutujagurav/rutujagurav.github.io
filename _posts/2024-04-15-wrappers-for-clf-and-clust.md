@@ -12,7 +12,6 @@ Every time I start a new machine learning project, I find myself going through t
 The premise is this: Someone hands you a clasification dataset. You want to know the standard metrics on various classifiers available in `scikit-learn` and you want to know them _now_. You don't want to spend time writing boilerplate code setting up a grid search and you don't want to spend time making plots. Here is minimally complete example of how you can do it with essentially 2 function calls:
 
 ```python
-
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
