@@ -79,7 +79,7 @@ This will produce a whole bunch of useful outputs including the best model which
 
 ### `eval_classification`
 
-The primary out is the classic sklearn _classification report_. Sometimes that's all you need but by setting the `make_metrics_plots` to `True` you can choose to make a variety of other plots that I find useful for understanding the performance of the model. These include the familiar plots of the confusion matrix, the ROC curve, the precision-recall curve as well as some more exotic ones I found in `scikit-plot` that are exclusive to binary classification like the KS statistic plot, the cumulative gains curve and the lift curve. You can also choose to do Shapley analysis to _explain_ the model predictions by setting the `make_shap_plot` parameter to `True` and specifying the number of samples to use for the analysis with the `shap_nsamples` parameter. I love the fantastic `shap` package so I just wrapped the _KernelExplainer_ and _summary_plot_ from `shap` in this function.
+The primary output is the classic sklearn _classification report_. Sometimes that's all you need but by setting the `make_metrics_plots` to `True` you can choose to make a variety of other plots that I find useful for understanding the performance of the model. These include the familiar plots of the confusion matrix, the ROC curve, the precision-recall curve as well as some more exotic ones I found in `scikit-plot` that are exclusive to binary classification like the KS statistic plot, the cumulative gains curve and the lift curve. You can also choose to do Shapley analysis to _explain_ the model predictions by setting the `make_shap_plot` parameter to `True` and specifying the number of samples to use for the analysis with the `shap_nsamples` parameter. I love the fantastic `shap` package so I just wrapped the _KernelExplainer_ and _summary_plot_ from `shap` in this function.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -93,7 +93,7 @@ The primary out is the classic sklearn _classification report_. Sometimes that's
     </div>
 </div>
 <div class="caption">
-    The classic evaluation plots produced by `eval_classification` function on the test set for the best model returned by `gridsearch_classification()` for the example above.
+    The classic evaluation plots produced by _eval_classification_ function on the test set for the best model returned by _gridsearch_classification()_ for the example above.
 </div>
 
 <div class="row mt-3">
@@ -108,7 +108,7 @@ The primary out is the classic sklearn _classification report_. Sometimes that's
     </div>
 </div>
 <div class="caption">
-    Some more exotic evaluation plots exclusive to binary classification produced by `eval_classification` function on the test set for the best model returned by `gridsearch_classification()` for the example above.
+    Some more exotic evaluation plots exclusive to binary classification produced by _eval_classification_ function on the test set for the best model returned by _gridsearch_classification()_ for the example above.
 </div>
 
 <div class="row mt-3">
@@ -117,5 +117,5 @@ The primary out is the classic sklearn _classification report_. Sometimes that's
     </div>
 </div>
 <div class="caption">
-    The Shapley analysis summary plot produced by `shape` package for the best model returned by `gridsearch_classification()` for the example above.
+    The Shapley analysis summary plot produced by _shap_ package for the best model returned by _gridsearch_classification()_ for the example above.
 </div>
