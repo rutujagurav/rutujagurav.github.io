@@ -66,7 +66,8 @@ Let's dive a bit deeper into the two functions that are being called here.
  
 ### `gridsearch_classification`
 
-This will produce a whole bunch of useful outputs including the best model which you can use as you choose downstream, the results of the grid search - The data is stored in a neat JSOn file and it is also visualized with a _Parallel Co-ordinates Plot_. I find this type of plot very useful to get a quick view of the grid search.
+This will produce a whole bunch of useful outputs including the best model which you can use as you choose downstream and the results of the grid search. The data is stored in a neat JSON files and is visualized with a _Parallel Co-ordinates Plot_. I find this type of plot very useful to get a quick view of the grid search.
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/parcoord_plot.png" class="img-fluid rounded z-depth-1" %}
