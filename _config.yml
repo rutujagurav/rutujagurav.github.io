@@ -128,8 +128,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Little Bits of Code # blog_name will be displayed in your blog page
+blog_description: Here I accumulate the detritus of my journey through the world of computation. # blog_description will be displayed in your blog page
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -138,7 +138,7 @@ pagination:
 
 related_blog_posts:
   enabled: true
-  max_related: 5
+  max_related: 2
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
@@ -156,7 +156,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname:  # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -164,7 +164,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
   - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+    rss_url: https://medium.com/@rutujagurav100/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -188,7 +188,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 1 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -292,8 +292,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Gurav]
+  first_name: [Rutuja]
 
   style: apa
   locale: en
