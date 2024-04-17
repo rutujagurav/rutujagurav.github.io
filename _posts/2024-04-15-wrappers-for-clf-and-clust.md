@@ -20,7 +20,6 @@ import os
 from sklearn import datasets
 from sklearn.preprocessing import StandardScaler
 
-
 ## Load dataset: Example - breast cancer prediction
 data = datasets.load_breast_cancer()
 class_names = [str(x) for x in data.target_names]
@@ -62,11 +61,11 @@ eval_classification(y_test=y_test, y_pred=y_pred, y_pred_proba=y_pred_proba,  # 
 
 ```
 
-Let's dive a bit deeper into the two functions that are being called here.
+Let's dive a bit deeper into these two convenience functions.
  
 ### `gridsearch_classification`
 
-This will produce a whole bunch of useful outputs including the best model which you can use as you choose downstream and the results of the grid search. The data is stored in a neat JSON files and is visualized with a _Parallel Co-ordinates Plot_. I find this type of plot very useful to get a quick view of the grid search.
+This will produce a whole bunch of useful outputs including the best model which you can use as you choose downstream and the results of the grid search. The data is stored in neat folder structure in JSON files and is visualized with a _Parallel Co-ordinates Plot_. I find this type of plot very useful to get a quick view of the grid search.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -79,17 +78,17 @@ This will produce a whole bunch of useful outputs including the best model which
 
 ### `eval_classification`
 
-The primary output is the classic sklearn _classification report_. Sometimes that's all you need but by setting the `make_metrics_plots` to `True` you can choose to make a variety of other plots that I find useful for understanding the performance of the model. These include the familiar plots of the confusion matrix, the ROC curve, the precision-recall curve as well as some more exotic ones I found in `scikit-plot` that are exclusive to binary classification like the KS statistic plot, the cumulative gains curve and the lift curve. You can also choose to do Shapley analysis to _explain_ the model predictions by setting the `make_shap_plot` parameter to `True` and specifying the number of samples to use for the analysis with the `shap_nsamples` parameter. I love the fantastic `shap` package so I just wrapped the _KernelExplainer_ and _summary_plot_ from `shap` in this function.
+The primary output is the classic sklearn _classification report_. Sometimes that's all you need but by setting the `make_metrics_plots` to `True` you can choose to make a variety of other plots that I find useful for understanding the performance of the model. These include the familiar plots of the confusion matrix, the ROC curve, the precision-recall curve as well as some more exotic ones I found in `scikit-plot` that are exclusive to binary classification like the KS statistic plot, the cumulative gains curve and the lift curve. You can also choose to do Shapley analysis to _explain_ the model predictions by setting the `make_shap_plot` parameter to `True` and specifying the number of samples to use for the analysis with the `shap_nsamples` parameter. I love the fantastic `shap` package so I just wrapped the _KernelExplainer_ and _summary_plot_ in this function.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/confusion_matrix.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/confusion_matrix.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/classwise_roc_curve.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/classwise_roc_curve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/classwise_pr_curve.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/classwise_pr_curve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -98,13 +97,13 @@ The primary output is the classic sklearn _classification report_. Sometimes tha
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/ks_stat.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/ks_stat.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/cumul_gain.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/cumul_gain.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/lift_curve.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/lift_curve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -113,9 +112,10 @@ The primary output is the classic sklearn _classification report_. Sometimes tha
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/shap_summary_plot.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/shap_summary_plot.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
     The Shapley analysis summary plot produced by _shap_ package for the best model returned by _gridsearch_classification()_ for the example above.
 </div>
+
