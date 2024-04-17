@@ -13,7 +13,7 @@ Every time I start a new machine learning project, I find myself going through t
 
 ## Classification
 
-The premise is this: Someone hands you a classification dataset. You want to know the standard metrics on various classifiers available in `scikit-learn` and you want to know them _now_. You don't want to spend time writing boilerplate code setting up a grid search and you don't want to spend time making plots. Here is minimally complete example of how you can do it with essentially 2 function calls:
+The premise is this: Someone hands you a classification dataset. You want to know the standard metrics on various classifiers available in `scikit-learn` and you want to know them _now_. You don't want to spend time writing boilerplate code setting up a grid search and you don't want to spend time making plots. Here is minimally complete example of how you can do it with 2 functions:
 
 ```python
 import matplotlib.pyplot as plt
@@ -121,4 +121,61 @@ The primary output is the classic sklearn _classification report_. Sometimes tha
 </div>
 <div class="caption">
     The Shapley analysis summary plot produced by shap package for the best model returned by gridsearch_classification() for the example above.
+</div>
+
+## Clustering
+
+Same premise as before but this time with clustering tasks. Here is a minimally complete example of how you can do it with 1 function:
+
+```python
+import os
+import numpy as np
+from sklearn.datasets import make_blobs
+from clustutils4r.eval_clustering import eval_clustering
+
+## For testing purposes
+rng = np.random.RandomState(0)
+n_samples=1000
+
+### Synthetic data
+X, y = make_blobs(n_samples=n_samples, centers=5, n_features=2, cluster_std=0.60, random_state=rng)
+
+save_dir = "results"
+os.makedirs(save_dir, exist_ok=True)
+
+best_model, grid_search_results = eval_clustering(
+                                       X=X,                                               # dataset to cluster
+                                       gt_labels=y,                                       # ground-truth labels; often these aren't available so don't pass this argument
+                                       num_runs=10,                                       # number of times to fit a model
+                                       best_model_metric="Calinski-Harabasz",             # metric to use to choose the best model
+                                       make_silhoutte_plots=True, embed_data_in_2d=False, # whether to make silhouette plots
+                                       show=True,                                         # whether to display the plots; this is used in a notebook
+                                       save=True, save_dir="results"                      # whether to save the plots
+                                    )
+```
+
+Clustering, as you know, is a bit trickier than classification because often there is no ground truth to compare the found clusters to. There is also rarely some external validation test or downstream task available to quantify if any/all clusters you found are "useful". Clustering is often an exploratory tool. So, the evaluation is a bit more heuristic based. Clustering also often has a _free parameter_, for example, the number of clusters in case of partition-based algorithms like K-Means or the minimum cluster size in case of density based algorithms. In `sklearn` there are 3 intrinsic cluster quality metrics viz. the _Calinski-Harabasz_ score, the _Davies-Bouldin_ score and the most used one being the _Silhouette Score_. Another important evaluation folks do for clustering is measuring the consensus between different labellings of the same dataset. `sklearn` has a wide variety of clustering consensus metrics like _Adjusted Rand Index_, _Normalized Mutual Information_, _V Measure_, _Fowlkes-Mallows Index_.
+
+Let's take a look at my convenience function.
+
+### `eval_clustering`
+
+In the default setting in which all you have is the unlabelled dataset, it will calculate the three intrinsic cluster quality metrics for a variety of models and combinations of free parameters and return the best model based on the scoring metric you choose using the `best_model_metric` parameter along with the grid search results. You can also make a _Silhouette Plot_ for the best model by setting the `make_silhoutte_plots` to `True` and since most datasets have more than 2 features, you can get a t-SNE projection of the high dimensional datapoints by setting `embed_data_in_2d` to `True`. If you have the ground truth labels available, you can pass them to the `gt_labels` parameter and it will calculate the clustering consensus metrics.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/parcoord_plot_clust.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+    The parallel co-ordinates plot that is produced by eval_clustering() for the k-Means clustering from the example above.
+</div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/silhouette_plot.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+    The Silhouette plot that is produced by eval_clustering() for the best model from the example above.
 </div>
