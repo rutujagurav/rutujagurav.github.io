@@ -73,11 +73,11 @@ This will produce a whole bunch of useful outputs including the best model which
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/parcoord_plot.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/parcoord_plot_clf.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    The parallel co-ordinates plot that is produced by gridsearch_classification() for the K Nearest Neighbors classifier for the example above.
+    The parallel co-ordinates plot that is produced by gridsearch_classification() for the k-Nearest Neighbors classifier for the example above.
 </div>
 
 ### `eval_classification`
