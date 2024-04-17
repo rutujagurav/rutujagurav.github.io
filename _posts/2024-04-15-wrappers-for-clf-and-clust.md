@@ -6,10 +6,13 @@ description: wrappers for sklearn et al for classification and clustering
 tags: classification scikit-learn wrappers
 categories: my-little-helpers
 ---
-# Getting Started
+
+# Getting Started 
+
 Every time I start a new machine learning project, I find myself going through the same tedious process of trial and error of setting up a grid search to find the _right_ model along with the _right_ set of hyperparameters for the model that optimize one or more of the laundry list of _metrics-of-interest_ and repeating every combination of _free parameters_ in this pipeline a bunch of times and finally making a lot of plots to get the lay of the land so to speak. So, over the years, I have developed a set of convenience wrappers around the mighty `scikit-learn` library that I use to make this process a bit more streamlined and published them as `clfutils4r` for classification tasks and `clustutils4r` for clustering tasks (the 'r' being my initial not the language...err, should have thought this through, huh?). I thought I would share them here in case they are useful to anyone else. 
 
 ## Classification
+
 The premise is this: Someone hands you a classification dataset. You want to know the standard metrics on various classifiers available in `scikit-learn` and you want to know them _now_. You don't want to spend time writing boilerplate code setting up a grid search and you don't want to spend time making plots. Here is minimally complete example of how you can do it with essentially 2 function calls:
 
 ```python
@@ -74,7 +77,7 @@ This will produce a whole bunch of useful outputs including the best model which
     </div>
 </div>
 <div class="caption">
-    The parallel co-ordinates plot that is produced by `gridsearch_classification` function for the _K Nearest Neighbors_ classifier for the example above.
+    The parallel co-ordinates plot that is produced by gridsearch_classification() for the K Nearest Neighbors classifier for the example above.
 </div>
 
 ### `eval_classification`
