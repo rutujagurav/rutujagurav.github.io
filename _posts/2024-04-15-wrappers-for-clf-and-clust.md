@@ -7,8 +7,9 @@ tags: classification scikit-learn wrappers
 categories: my-little-helpers
 ---
 # Getting Started
-Every time I start a new machine learning project, I find myself going through the same tedious process of trial and error of setting up a grid search to find the _right_ model along with the _right_ set of hyperparameters for the model that optimize one or more of the laundry list of _metrics-of-interest_ and repeating every combination of _free parameters_ in this pipeline a bunch of times and finally making a lot of plots to get the lay of the land so to speak. So, over the years, I have developed a set of convenience wrappers around the mighty `scikit-learn` library that I use to make this process a bit more streamlined and published them as `clfutils4r` (the 'r' being my initial not the language...err, should have thought this through, huh?). I thought I would share them here in case they are useful to anyone else. 
+Every time I start a new machine learning project, I find myself going through the same tedious process of trial and error of setting up a grid search to find the _right_ model along with the _right_ set of hyperparameters for the model that optimize one or more of the laundry list of _metrics-of-interest_ and repeating every combination of _free parameters_ in this pipeline a bunch of times and finally making a lot of plots to get the lay of the land so to speak. So, over the years, I have developed a set of convenience wrappers around the mighty `scikit-learn` library that I use to make this process a bit more streamlined and published them as `clfutils4r` for classification tasks and `clustutils4r` for clustering tasks (the 'r' being my initial not the language...err, should have thought this through, huh?). I thought I would share them here in case they are useful to anyone else. 
 
+## Classification
 The premise is this: Someone hands you a classification dataset. You want to know the standard metrics on various classifiers available in `scikit-learn` and you want to know them _now_. You don't want to spend time writing boilerplate code setting up a grid search and you don't want to spend time making plots. Here is minimally complete example of how you can do it with essentially 2 function calls:
 
 ```python
@@ -92,7 +93,7 @@ The primary output is the classic sklearn _classification report_. Sometimes tha
     </div>
 </div>
 <div class="caption">
-    The classic evaluation plots produced by _eval_classification_ function on the test set for the best model returned by _gridsearch_classification()_ for the example above.
+    The classic evaluation plots produced by eval_classification() on the test set for the best model returned by gridsearch_classification() for the example above.
 </div>
 
 <div class="row mt-3">
@@ -107,7 +108,7 @@ The primary output is the classic sklearn _classification report_. Sometimes tha
     </div>
 </div>
 <div class="caption">
-    Some more exotic evaluation plots exclusive to binary classification produced by _eval_classification_ function on the test set for the best model returned by _gridsearch_classification()_ for the example above.
+    Some more exotic evaluation plots exclusive to binary classification produced by eval_classification() on the test set for the best model returned by gridsearch_classification() for the example above.
 </div>
 
 <div class="row mt-3">
@@ -116,6 +117,5 @@ The primary output is the classic sklearn _classification report_. Sometimes tha
     </div>
 </div>
 <div class="caption">
-    The Shapley analysis summary plot produced by _shap_ package for the best model returned by _gridsearch_classification()_ for the example above.
+    The Shapley analysis summary plot produced by shap package for the best model returned by gridsearch_classification() for the example above.
 </div>
-
