@@ -76,8 +76,8 @@
     {
       "institution": "University of California, Riverside",
       "location": "Riverside, CA USA",
-      "url": "https://www.ucr.edu/",
-      "area": "AI for Science",
+      "url": "https://ucrmagazinearchive.ucr.edu/nobel-teacher",
+      "area": "Computer Science: AI for Science",
       "studyType": "PhD",
       "startDate": "2019-09-21",
       "endDate": ""
@@ -86,6 +86,7 @@
       "institution": "University of California, Riverside",
       "location": "Riverside, CA USA",
       "url": "https://www.ucr.edu/",
+      "area": "Computer Science",
       "studyType": "MS",
       "startDate": "2017-09-21",
       "endDate": "2019-06-15"
