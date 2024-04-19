@@ -57,7 +57,6 @@ y_pred_proba = best_model.predict_proba(X_test)
 from clfutils4r.eval_classification import eval_classification
 eval_classification(y_test=y_test, y_pred=y_pred, y_pred_proba=y_pred_proba,  # ground truth labels, predicted labels, predicted probabilities
                     class_names=class_names, feature_names=feature_names,
-                    titlestr="Breast Cancer Classification",
                     make_metrics_plots=True, # make a variety of classification metrics plots
                     make_shap_plot=True, shap_nsamples=100, # do Shapley analysis for model explainability
                     show=True,  
@@ -69,7 +68,7 @@ Let's dive a bit deeper into these two convenience functions.
  
 ### `gridsearch_classification`
 
-This will produce a whole bunch of useful outputs including the best model which you can use as you choose downstream and the results of the grid search. The data is stored in neat folder structure in JSON files and is visualized with a _Parallel Co-ordinates Plot_. I find this type of plot quite useful to get a quick view of the grid search.
+This will produce a whole bunch of useful outputs including the best model and the results of the grid search. The data is stored in neat folder structure in JSON files and is visualized with a _Parallel Co-ordinates Plot_. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
