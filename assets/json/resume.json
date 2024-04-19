@@ -103,13 +103,6 @@
   
   "publications": [
     {
-      "name": "Identifying Witnesses to Noise Transients in Ground-based Gravitational-wave Observations using Auxiliary Channels with Matrix and Tensor Factorization Techniques.",
-      "publisher": "NeurIPS 2022 AI for Science: Progress and Promises",
-      "releaseDate": "2022-12-15",
-      "url": "https://openreview.net/forum?id=O9q0ma6Oh5e",
-      "summary": ""
-    },
-    {
       "name": "Can SAM recognize crops? Quantifying the zero-shot performance of a semantic segmentation foundation model on generating crop-type maps using satellite imagery for precision agriculture",
       "publisher": "NeurIPS 2023 AI for Scientific Discovery: From Theory to Practice",
       "releaseDate": "2023-12-15",
@@ -117,8 +110,15 @@
       "summary": ""
     },
     {
+      "name": "Identifying Witnesses to Noise Transients in Ground-based Gravitational-wave Observations using Auxiliary Channels with Matrix and Tensor Factorization Techniques.",
+      "publisher": "NeurIPS 2022 AI for Science: Progress and Promises",
+      "releaseDate": "2022-12-15",
+      "url": "https://openreview.net/forum?id=O9q0ma6Oh5e",
+      "summary": ""
+    },
+    {
       "name": "Conflation of geospatial POI data and ground-level imagery via link prediction on joint semantic graph.",
-      "publisher": "ACM SIGSPATIAL International Workshop on AI for Geographic Knowledge Discovery",
+      "publisher": "ACM SIGSPATIAL 2021 International Workshop on AI for Geographic Knowledge Discovery",
       "releaseDate": "2021-11-15",
       "url": "https://dl.acm.org/doi/pdf/10.1145/3486635.3491068",
       "summary": ""
