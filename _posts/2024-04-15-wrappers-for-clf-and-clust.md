@@ -73,7 +73,7 @@ This will produce a whole bunch of useful outputs including the best model which
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/parcoord_plot_clf.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/parcoord_plot_clf.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -179,3 +179,6 @@ In the default setting in which all you have is the unlabelled dataset, it will 
 <div class="caption">
     The Silhouette plot that is produced by eval_clustering() for the best model from the example above.
 </div>
+
+## Parting Thoughts
+Every machine learning engineering, researcher and dabbler I've met over the years has their own version of such wrappers. I hope someone finds them useful. I've packaged and published these on PyPI and they can install them with `pip install clfutils4r` and `pip install clustutils4r`. The code is available on my Github, fork away and modify to your liking. Even if you don't like them as they are, hopefully they save you some time by serving as a starting point. Recently, I've taken to using [Optuna](https://optuna.org/) for hyperparameter optimization and I'm thinking of incorporating that into these wrappers. It has a lot cleverer ways of optimally searching the hyperparameters space than the good old GridSearchCV and RandomizedSearchCV that I've been using here. I'll write a post about that when I get around to it. Until then, prowl around the code and let me know what you think.
