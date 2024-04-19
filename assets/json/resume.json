@@ -163,6 +163,15 @@
       ]
     }
   ],
+  "certificates": [
+    {
+      "name": "Machine Learning",
+      "date": "2016-08-11",
+      "issuer": "Stanford University",
+      "url": "https://coursera.org/share/34e40d61a4a4c5cd89283848a07f2c5b",
+      "icon": "fa-solid fa-clipboard-check"
+    }
+  ],
   "languages": [
     {
       "language": "English",
@@ -180,5 +189,4 @@
       "icon": ""
     }
   ]
-  
 }
