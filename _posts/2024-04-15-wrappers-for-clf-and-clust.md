@@ -9,11 +9,11 @@ categories: my-little-helpers
 
 # Getting Started 
 
-Every time I start a new machine learning project, I find myself going through the same tedious process of trial and error of setting up a grid search to find the _right_ model along with the _right_ set of hyperparameters for the model that optimize one or more of the laundry list of _metrics-of-interest_ and repeating every combination of _free parameters_ in this pipeline a bunch of times and finally making a lot of plots to get the lay of the land so to speak. So, over the years, I have developed a set of convenience wrappers around the mighty `scikit-learn` library that I use to make this process a bit more streamlined and published them as `clfutils4r` for classification tasks and `clustutils4r` for clustering tasks (the 'r' being my initial not the language...err, should have thought this through, huh?). I thought I would share them here in case they are useful to anyone else. 
+Every time I start a new machine learning project (not deep learning, that's a story for another time), I find myself going through the same tedious process of trial and error - set up a grid search to find the _right_ model along with the _right_ set of hyperparameters for the model that optimize one or more of the laundry list of _metrics-of-interest_...then repeat every combination of _free parameters_ in this pipeline a bunch of times and finally making a lot of plots to get the lay of the land so to speak. So, over the years, I've developed a set of convenience wrappers around the mighty `scikit-learn` library to make this process a bit more streamlined and I've published them as `clfutils4r` for classification tasks and `clustutils4r` for clustering tasks (the 'r' being my initial and not the programming language...err, should have thought this through, huh?). I thought I would share them here in case they are useful to anyone else.
 
 ## Classification
 
-The premise is this: Someone hands you a classification dataset. You want to know the standard metrics on various classifiers available in `scikit-learn` and you want to know them _now_. You don't want to spend time writing boilerplate code setting up a grid search and you don't want to spend time making plots. Here is minimally complete example of how you can do it with 2 functions:
+The premise is this: Someone hands you a classification dataset. After you are done poking and prodding it with some exploratory data analysis (EDA), you want to know the standard metrics on various classifiers available in `scikit-learn` and you want to know them _now_. You don't want to spend time writing boilerplate code setting up a grid search and you don't want to spend time making plots to consolidate the results of said grid search. Here is minimally complete example of how you can do just that with 2 wrapper functions:
 
 ```python
 import matplotlib.pyplot as plt
@@ -69,11 +69,11 @@ Let's dive a bit deeper into these two convenience functions.
  
 ### `gridsearch_classification`
 
-This will produce a whole bunch of useful outputs including the best model which you can use as you choose downstream and the results of the grid search. The data is stored in neat folder structure in JSON files and is visualized with a _Parallel Co-ordinates Plot_. I find this type of plot very useful to get a quick view of the grid search.
+This will produce a whole bunch of useful outputs including the best model which you can use as you choose downstream and the results of the grid search. The data is stored in neat folder structure in JSON files and is visualized with a _Parallel Co-ordinates Plot_. I find this type of plot quite useful to get a quick view of the grid search.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/parcoord_plot_clf.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/parcoord_plot_clf.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -86,13 +86,13 @@ The primary output is the classic sklearn _classification report_. Sometimes tha
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/confusion_matrix.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/confusion_matrix.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/classwise_roc_curve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/classwise_roc_curve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/classwise_pr_curve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/classwise_pr_curve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -101,13 +101,13 @@ The primary output is the classic sklearn _classification report_. Sometimes tha
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/ks_stat.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/ks_stat.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/cumul_gain.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/cumul_gain.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/lift_curve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/lift_curve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -116,7 +116,7 @@ The primary output is the classic sklearn _classification report_. Sometimes tha
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/shap_summary_plot.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/shap_summary_plot.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -164,7 +164,7 @@ In the default setting in which all you have is the unlabelled dataset, it will 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/parcoord_plot_clust.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/parcoord_plot_clust.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -173,7 +173,7 @@ In the default setting in which all you have is the unlabelled dataset, it will 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/silhouette_plot.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/post_2024-04-15-wrappers-for-clf-and-clust/silhouette_plot.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
