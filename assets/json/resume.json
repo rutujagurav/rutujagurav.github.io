@@ -126,7 +126,7 @@
   ],
   "skills": [
     {
-      "name": "Programming Languages / Software",
+      "name": "Programming Languages & Software",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Python (proficient)",
@@ -156,7 +156,7 @@
       ]
     },
     {
-      "name": "Collaboration and Experiments Tracking",
+      "name": "Collaboration & Experiments Tracking",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Git", "Google Colab", "Weight & Biases / Tensorboard"
