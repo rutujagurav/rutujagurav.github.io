@@ -15,6 +15,33 @@
       }
     ]
   },
+  "education": [
+    {
+      "institution": "University of California, Riverside",
+      "location": "Riverside, CA USA",
+      "url": "https://ucrmagazinearchive.ucr.edu/nobel-teacher",
+      "area": "Computer Science: AI for Science",
+      "studyType": "PhD",
+      "startDate": "2019-09-21",
+      "endDate": ""
+    },
+    {
+      "institution": "University of California, Riverside",
+      "location": "Riverside, CA USA",
+      "area": "Computer Science",
+      "studyType": "MS",
+      "startDate": "2017-09-21",
+      "endDate": "2019-06-15"
+    },
+    {
+      "institution": "University of Mumbai",
+      "location": "Mumabi, India",
+      "area": "Computer Engineering",
+      "studyType": "BE",
+      "startDate": "2013-06-01",
+      "endDate": "2017-06-15"
+    }
+  ],
   "work": [
     {
       "name": "Lawrence Livermore National Lab (LLNL)",
@@ -39,6 +66,29 @@
       "endDate": "2018-08-31",
       "summary": "Water mains breaks prediction using historic pipe records to forecast future breaks in water supply pipelines to aid risk assessment and maintenance.",
       "highlights": ["Team: GeoAI"]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Can SAM recognize crops? Quantifying the zero-shot performance of a semantic segmentation foundation model on generating crop-type maps using satellite imagery for precision agriculture",
+      "publisher": "NeurIPS 2023 AI for Scientific Discovery: From Theory to Practice",
+      "releaseDate": "2023-12-15",
+      "url": "https://arxiv.org/abs/2311.15138",
+      "summary": ""
+    },
+    {
+      "name": "Identifying Witnesses to Noise Transients in Ground-based Gravitational-wave Observations using Auxiliary Channels with Matrix and Tensor Factorization Techniques.",
+      "publisher": "NeurIPS 2022 AI for Science: Progress and Promises",
+      "releaseDate": "2022-12-15",
+      "url": "https://openreview.net/forum?id=O9q0ma6Oh5e",
+      "summary": ""
+    },
+    {
+      "name": "Conflation of geospatial POI data and ground-level imagery via link prediction on joint semantic graph.",
+      "publisher": "ACM SIGSPATIAL 2021 International Workshop on AI for Geographic Knowledge Discovery",
+      "releaseDate": "2021-11-15",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3486635.3491068",
+      "summary": ""
     }
   ],
   "volunteer": [
@@ -70,58 +120,6 @@
     {
       "organization": "FSS 2021, SMC 2021",
       "position": "Program Chair Member"
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of California, Riverside",
-      "location": "Riverside, CA USA",
-      "url": "https://ucrmagazinearchive.ucr.edu/nobel-teacher",
-      "area": "Computer Science: AI for Science",
-      "studyType": "PhD",
-      "startDate": "2019-09-21",
-      "endDate": ""
-    },
-    {
-      "institution": "University of California, Riverside",
-      "location": "Riverside, CA USA",
-      "url": "https://www.ucr.edu/",
-      "area": "Computer Science",
-      "studyType": "MS",
-      "startDate": "2017-09-21",
-      "endDate": "2019-06-15"
-    },
-    {
-      "institution": "University of Mumbai",
-      "location": "Mumabi, India",
-      "area": "Computer Engineering",
-      "studyType": "BE",
-      "startDate": "2013-06-01",
-      "endDate": "2017-06-15"
-    }
-  ],
-  
-  "publications": [
-    {
-      "name": "Can SAM recognize crops? Quantifying the zero-shot performance of a semantic segmentation foundation model on generating crop-type maps using satellite imagery for precision agriculture",
-      "publisher": "NeurIPS 2023 AI for Scientific Discovery: From Theory to Practice",
-      "releaseDate": "2023-12-15",
-      "url": "https://arxiv.org/abs/2311.15138",
-      "summary": ""
-    },
-    {
-      "name": "Identifying Witnesses to Noise Transients in Ground-based Gravitational-wave Observations using Auxiliary Channels with Matrix and Tensor Factorization Techniques.",
-      "publisher": "NeurIPS 2022 AI for Science: Progress and Promises",
-      "releaseDate": "2022-12-15",
-      "url": "https://openreview.net/forum?id=O9q0ma6Oh5e",
-      "summary": ""
-    },
-    {
-      "name": "Conflation of geospatial POI data and ground-level imagery via link prediction on joint semantic graph.",
-      "publisher": "ACM SIGSPATIAL 2021 International Workshop on AI for Geographic Knowledge Discovery",
-      "releaseDate": "2021-11-15",
-      "url": "https://dl.acm.org/doi/pdf/10.1145/3486635.3491068",
-      "summary": ""
     }
   ],
   "skills": [
