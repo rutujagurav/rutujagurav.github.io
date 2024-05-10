@@ -6,7 +6,7 @@ subtitle:  # <a href='#'>UC Riverside</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>Generate with ai-avatar-generator.com</p>
