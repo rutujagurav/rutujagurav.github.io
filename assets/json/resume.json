@@ -168,6 +168,13 @@
       "issuer": "Stanford University",
       "url": "https://coursera.org/share/34e40d61a4a4c5cd89283848a07f2c5b",
       "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Generative AI with Large Language Models",
+      "date": "2024-05-16",
+      "issuer": "DeepLearning.AI",
+      "url": "https://coursera.org/share/b077c5b6592e47ebe0adf80a6b12ea85",
+      "icon": "fa-solid fa-clipboard-check"
     }
   ],
   "languages": [
