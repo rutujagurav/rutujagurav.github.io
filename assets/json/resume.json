@@ -178,6 +178,13 @@
       "issuer": "DeepLearning.AI",
       "url": "https://coursera.org/share/b077c5b6592e47ebe0adf80a6b12ea85",
       "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "AWS S3 Basics",
+      "date": "2024-05-24",
+      "issuer": "Coursera Project Network",
+      "url": "https://coursera.org/share/9bdec30eab9b896fb1f52bd67e020947",
+      "icon": "fa-solid fa-clipboard-check"
     }
   ],
   "languages": [
