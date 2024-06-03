@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Presented my first ever paper!
+title: presented my first ever paper!
 date: 2019-08-05
 inline: false
 related_posts: false

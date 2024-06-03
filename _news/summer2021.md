@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summer at Oak Ridge National Lab
+title: summer at Oak Ridge National Lab
 date: 2021-08-31
 inline: false
 related_posts: false
