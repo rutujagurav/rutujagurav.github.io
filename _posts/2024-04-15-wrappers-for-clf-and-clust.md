@@ -7,7 +7,7 @@ tags: classification scikit-learn wrappers
 categories: my-little-helpers
 ---
 
-# Getting Started 
+# Getting Started
 
 Every time I start a new machine learning project (not deep learning, that's a story for another time), I find myself going through the same tedious process of trial and error - set up a grid search to find the _right_ model along with the _right_ set of hyperparameters for the model that optimize one or more of the laundry list of _metrics-of-interest_...then repeat every combination of _free parameters_ in this pipeline a bunch of times and finally making a lot of plots to get the lay of the land so to speak. So, over the years, I've developed a set of convenience wrappers around the mighty `scikit-learn` library to make this process a bit more streamlined and I've published them as `clfutils4r` for classification tasks and `clustutils4r` for clustering tasks (the 'r' being my initial and not the programming language...err, should have thought this through, huh?). I thought I would share them here in case they are useful to anyone else.
 
@@ -65,10 +65,10 @@ eval_classification(y_test=y_test, y_pred=y_pred, y_pred_proba=y_pred_proba,  # 
 ```
 
 Let's dive a bit deeper into these two convenience functions.
- 
+
 ### `gridsearch_classification`
 
-This will produce a whole bunch of useful outputs including the best model and the results of the grid search. The data is stored in neat folder structure in JSON files and is visualized with a _Parallel Co-ordinates Plot_. 
+This will produce a whole bunch of useful outputs including the best model and the results of the grid search. The data is stored in neat folder structure in JSON files and is visualized with a _Parallel Co-ordinates Plot_.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -180,4 +180,5 @@ In the default setting in which all you have is the unlabelled dataset, it will 
 </div>
 
 ## Parting Thoughts
+
 Every machine learning engineer, researcher and dabbler I've met over the years has their own version of such wrappers. I hope someone finds these ones useful. I've packaged and published these on PyPI; install them with `pip install clfutils4r` and `pip install clustutils4r`. The code is available on my Github, fork away and modify to your liking. Even if you don't like them as they are, hopefully they save you some time by serving as a starting point. Recently, I've taken to using [Optuna](https://optuna.org/) for hyperparameter optimization and I'm thinking of incorporating that into these wrappers. It has a lot cleverer ways of optimally searching the hyperparameters space than the good old GridSearchCV and RandomizedSearchCV that I've been using here. I would like to point to [PyCaret](https://pycaret.org/) which is a fantastic low-code, scikit-learn wrapper library that does a lot of what I've done here and so much more; it has a truly eye-watering amount of options one can play with and it integrates pretty much every hyperparameter search package available including Optuna, Ray Tune, Hyperopt, Scikit Optimize (which is probably defunct now?). PyCaret has everything one would need for classification, especially the `compare_models()` function which is fantastic for getting a quick _models x metrics_ table comparing all available models via cross-validation and `tune_model()` which essentially does what my `gridsearch_classification()` does and returns the best model and optionally the tuner object from which you can grab the full grid of results. As of this post, I haven't seen similar functions in the clustering module of PyCaret but I'm sure they are on the way. I've used it a few times and it's great but I wanted to write my own wrappers to understand the process better. Thanks for reading this post!
