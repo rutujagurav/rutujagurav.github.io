@@ -188,6 +188,13 @@
       "icon": "fa-solid fa-clipboard-check"
     },
     {
+      "name": "GenAI with Diffusion Models",
+      "date": "2024-11-26",
+      "issuer": "DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/accomplishments/7d5095ec-dd63-4682-9ab9-54c0ce7349fa?usp=sharing",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
       "name": "AWS S3 Basics",
       "date": "2024-05-24",
       "issuer": "Coursera Project Network",
