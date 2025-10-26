@@ -19,23 +19,14 @@
     {
       "institution": "University of California, Riverside",
       "location": "Riverside, CA USA",
-      "url": "https://ucrmagazinearchive.ucr.edu/nobel-teacher",
-      "area": "Computer Science: AI for Science",
-      "studyType": "PhD",
-      "startDate": "2019-09-21",
-      "endDate": ""
-    },
-    {
-      "institution": "University of California, Riverside",
-      "location": "Riverside, CA USA",
       "area": "Computer Science",
       "studyType": "MS",
-      "startDate": "2017-09-21",
-      "endDate": "2019-06-15"
+      "startDate": "",
+      "endDate": "2025"
     },
     {
       "institution": "University of Mumbai",
-      "location": "Mumabi, India",
+      "location": "Mumbai, India",
       "area": "Computer Engineering",
       "studyType": "BE",
       "startDate": "2013-06-01",
