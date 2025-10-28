@@ -40,7 +40,7 @@
       "startDate": "2024-06-15",
       "endDate": "2024-08-16",
       "summary": "Forecasting radiation exposure for human spaceflight using solar observations and bayesian deep learning",
-      "highlights": ["Team: Virtual Dosimeter"]
+      "highlights": ["Team: Forecasting Readiation Exposure for Human Spaceflight"]
     },
     {
       "name": "Lawrence Livermore National Lab (LLNL)",
@@ -169,6 +169,13 @@
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Git", "Google Colab", "Weight & Biases / Tensorboard"
+      ]
+    },
+    {
+      "name": "Cloud Computing Platforms",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Google Cloud Platform"
       ]
     }
   ],
