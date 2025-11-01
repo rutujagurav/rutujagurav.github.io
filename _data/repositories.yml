@@ -5,6 +5,7 @@ github_users:
 github_repos:
   - rutujagurav/clfutils4r
   - rutujagurav/clustutils4r
+  - rutujagurav/cookiecutterdl4r
   - rutujagurav/pyparfor
   - rutujagurav/my-iris-demo
   - rutujagurav/wildfire_burn_scars_segmentation
