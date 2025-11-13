@@ -2,7 +2,7 @@
 layout: post
 title: guts of the transformer
 date: 2025-10-30 10:00:00
-description: 
+description: because they are everywhere now
 tags: transformers language-models
 categories: cliff-notes
 ---

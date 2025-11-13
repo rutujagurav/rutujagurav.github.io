@@ -4,7 +4,7 @@ title: the Gell-Mann Amnesia effect
 date: 2024-11-11 16:20:00
 description: an occasional fear, a constant reminder.
 tags: musings
-categories: 
+categories: oh-what-a-mess
 ---
 
 Murray Gell-Mann won the 1969 Nobel Prize in Physics for his work on the theory of elementary particles; naively put, he invented quarks - one of the handful (embarassingly so) of the smallest (as of yet) building blocks of matter. The _Gell-Mann Amnesia Effect_ was coined and descibed by Michael Crichton (of the Jurassic Park fame) in his 2002 talk at the International Leadership Forum criticizing the prevelance of speculation in journalism, evoking the name of his famous physicist friend because "I once discussed it with Murray Gell-Mann, and by dropping a famous name I imply greater importance to myself, and to the effect, than it would otherwise have." Refreshingly honest.

@@ -3,7 +3,7 @@ layout: post
 title: what's going on with sktime?
 date: 2024-04-18 23:00:00
 description: the saga of sktime and aeon
-tags: uff musings sktime aeon
+tags: musings
 categories: oh-what-a-mess
 ---
 
