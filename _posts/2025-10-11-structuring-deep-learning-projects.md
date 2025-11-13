@@ -11,7 +11,8 @@ categories: my-little-helpers
 At some point a deep learning project leaps out of the single Jupyter notebook and into a more structured codebase on its way to deployment, either standalone or as part of a larger system. Over the years, through trial, error and sleuthing on github, I have settled on a basic, cookie-cutter structure that works pretty well for me for most low TRL academic projects. Here is a quick overview of the structure along with a brief description of each folder/file.
 
 ## The Structure
-```
+
+``` plain
 my_deep_learning_project/
 │├── src/
 │   ├── __init__.py
@@ -40,6 +41,7 @@ my_deep_learning_project/
 ```
 
 ## The Breakdown
+
 - `src/`: This is the main source code directory containing all the code for data loading, model definitions, experiments, and utilities.
   - `dataloading/`: Contains code related to datasets and preprocessing. The `dataset.py` file typically defines custom dataset classes. A benchmarking suite can have multiple datasets each of which can be defined in dedicated `<name>_dataset.py` files.
   - `models/`: Contains implementations of the models. `baselines.py` includes standard models for comparison, while `proposed_models.py` contains the implementation of the new model(s) being proposed. Alternatively, each model can be defined in its own file viz. `<model_name>.py`.
@@ -54,4 +56,5 @@ my_deep_learning_project/
 - `.gitignore`: Specifies files and directories to be ignored by Git.
 
 ## The Example
+
 Check out this template at my repo [cookiecutterdl4r](https://github.com/rutujagurav/cookiecutterdl4r).
