@@ -3,10 +3,9 @@ layout: post
 title: structuring deep learning projects
 date: 2025-11-10 15:00:00
 description: 
-tags: 
+tags: deep-learning
 categories: my-little-helpers
 ---
-
 
 At some point a deep learning project leaps out of the single Jupyter notebook and into a more structured codebase on its way to deployment, either standalone or as part of a larger system. Over the years, through trial, error and sleuthing on github, I have settled on a basic, cookie-cutter structure that works pretty well for me for most low TRL academic projects. Here is a quick overview of the structure along with a brief description of each folder/file.
 
