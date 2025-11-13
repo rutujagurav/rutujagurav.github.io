@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Guts of the Transformer
-date: 2025-10-30 00:00:00
+title: structuring deep learning projects
+date: 2025-11-10 15:00:00
 description: 
 tags: 
 categories: my-little-helpers
