@@ -181,17 +181,10 @@
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2016-08-11",
-      "issuer": "Stanford University",
-      "url": "https://coursera.org/share/34e40d61a4a4c5cd89283848a07f2c5b",
-      "icon": "fa-solid fa-clipboard-check"
-    },
-    {
-      "name": "GenAI with LLMs",
-      "date": "2024-05-16",
+      "name": "Finetuning Large Language Models",
+      "date": "2025-11-10",
       "issuer": "DeepLearning.AI",
-      "url": "https://coursera.org/share/b077c5b6592e47ebe0adf80a6b12ea85",
+      "url": "https://learn.deeplearning.ai/accomplishments/5c90e33d-3c6d-4564-8a67-a0076f48d497?usp=sharing",
       "icon": "fa-solid fa-clipboard-check"
     },
     {
@@ -202,10 +195,24 @@
       "icon": "fa-solid fa-clipboard-check"
     },
     {
+      "name": "GenAI with LLMs",
+      "date": "2024-05-16",
+      "issuer": "DeepLearning.AI",
+      "url": "https://coursera.org/share/b077c5b6592e47ebe0adf80a6b12ea85",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
       "name": "AWS S3 Basics",
       "date": "2024-05-24",
       "issuer": "Coursera Project Network",
       "url": "https://coursera.org/share/9bdec30eab9b896fb1f52bd67e020947",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Machine Learning",
+      "date": "2016-08-11",
+      "issuer": "Stanford University",
+      "url": "https://coursera.org/share/34e40d61a4a4c5cd89283848a07f2c5b",
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
